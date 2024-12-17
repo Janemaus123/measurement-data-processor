@@ -48,3 +48,7 @@ coverage.xml
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+# Exclude CSV and PNG files
+*.csv
+*.png
