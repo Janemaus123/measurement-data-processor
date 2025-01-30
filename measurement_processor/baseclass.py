@@ -5,7 +5,7 @@ from typing import Union
 
 class MeasurementProcessor(ABC):
     """
-    Abstract base class for processing, visualizing, and modeling measurement instrument data.
+    Abstract base class for preprocessing and visualizing measurement instrument data.
     """
 
     @abstractmethod
@@ -46,17 +46,4 @@ class MeasurementProcessor(ABC):
         """
         pass
 
-    @abstractmethod
-    def train_model(self, processed_data: Union[pd.DataFrame, np.ndarray], target_column: str, models=None) -> dict:
-        """
-        Train machine learning models on the processed data.
-        
-        Args:
-            processed_data: Data ready for modeling.
-            target_column (str): The target variable column name.
-            models (dict): Dictionary of models to train and evaluate.
-        
-        Returns:
-            A dictionary containing model metrics and trained models.
-        """
-        pass
+
